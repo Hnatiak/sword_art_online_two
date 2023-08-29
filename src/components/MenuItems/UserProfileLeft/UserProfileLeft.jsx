@@ -1,6 +1,6 @@
 import React from 'react';
-import { faPerson, faCircle } from '@fortawesome/free-solid-svg-icons';
-import { Container, Item, Logo, LogoHover, Name, CircleOne, CircleTwo } from './UserProfileLeft.styled';
+import { faPerson } from '@fortawesome/free-solid-svg-icons';
+import { Container, Item, Logo, LogoHover, Name } from './UserProfileLeft.styled';
 // import Button from './Button'; // Припустимо, ви маєте компонент Button
 
 const UserProfileRight = () => {
