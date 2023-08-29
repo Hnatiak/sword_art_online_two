@@ -30,8 +30,8 @@ export const Border = styled.div`
 
 export const MenuItem = styled(FontAwesomeIcon)`
     background: #999999ff; // #524d51ff
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     color: #848484;
     border-radius: 50%;
     padding: ${props => props['data-isfirstorlast'] ? '16px 17px' : '15px'};
@@ -41,4 +41,20 @@ export const MenuItem = styled(FontAwesomeIcon)`
         background: #e4a816;
         color: #fff;
     }
+`;
+
+export const ActiveMenuItem = styled(MenuItem)`
+  background-color: #e4a816;
+  border-color: #e4a816;
+  background: #e4a816;
+  color: #fff;
+`;
+
+export const BorderActive = styled.div`
+    color: #e4a816;
+    border: 3px solid #e4a816;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
 `;

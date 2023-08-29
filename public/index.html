@@ -44,18 +44,23 @@
         }
       })(window.location);
     </script>
-    <style>
-      audio {
-        display: none;
-      }
-      iframe {
-        display: none;
-      }
-    </style>
     <title>Sword Art Online</title>
   </head>
   <body>
-    <audio controls src="/sounds/Swordland.mp3" type="audio/mpeg" autoplay="true" volume="1" loop></audio>
+    <audio src="%PUBLIC_URL%/sounds/swordland.mp3" autoplay="autoplay" loop></audio>
+    <!-- <audio src="%PUBLIC_URL%/sounds/swordland.mp3" autoplay loop></audio>
+    <script>
+      window.addEventListener('load', function() {
+        var audio = document.querySelector('audio');
+        audio.play();
+      });
+    </script> -->
+    <!-- <audio src="swordland.mp3" type="audio/mpeg" autoplay loop></audio> -->
+    <!-- <audio src="swordland.mp3" autoplay="autoplay">Тег audio не поддерживается вашим браузером. Необходимо обновить браузер!</audio> -->
+    <!-- <embed src="swordland.mp3" width="70" height="45" alight="left" hidden="False" autostart="True" loop="True"> -->
+    <!-- <audio controls autoplay="true" loop>
+      <source src="swordland.mp3" type="audio/mpeg" loop>
+    </audio> -->
     <!-- <audio controls src="/sounds/Swordland.mp3" type="audio/mpeg" autoPlay volume="1" loop></audio> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
