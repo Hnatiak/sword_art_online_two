@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/sword_art_online_two/static/css/main.1edb47b8.css",
-    "main.js": "/sword_art_online_two/static/js/main.57f30c1e.js",
-    "static/js/908.4ece0980.chunk.js": "/sword_art_online_two/static/js/908.4ece0980.chunk.js",
+    "main.js": "/sword_art_online_two/static/js/main.d9986253.js",
+    "static/js/40.2c2a8e4b.chunk.js": "/sword_art_online_two/static/js/40.2c2a8e4b.chunk.js",
     "static/js/772.0cd946c4.chunk.js": "/sword_art_online_two/static/js/772.0cd946c4.chunk.js",
+    "static/media/SAO_Menu_SFX.mp3": "/sword_art_online_two/static/media/SAO_Menu_SFX.805ed3c768cc2488efad.mp3",
     "index.html": "/sword_art_online_two/index.html",
     "main.1edb47b8.css.map": "/sword_art_online_two/static/css/main.1edb47b8.css.map",
-    "main.57f30c1e.js.map": "/sword_art_online_two/static/js/main.57f30c1e.js.map",
-    "908.4ece0980.chunk.js.map": "/sword_art_online_two/static/js/908.4ece0980.chunk.js.map",
+    "main.d9986253.js.map": "/sword_art_online_two/static/js/main.d9986253.js.map",
+    "40.2c2a8e4b.chunk.js.map": "/sword_art_online_two/static/js/40.2c2a8e4b.chunk.js.map",
     "772.0cd946c4.chunk.js.map": "/sword_art_online_two/static/js/772.0cd946c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1edb47b8.css",
-    "static/js/main.57f30c1e.js"
+    "static/js/main.d9986253.js"
   ]
 }
