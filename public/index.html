@@ -44,9 +44,19 @@
         }
       })(window.location);
     </script>
+    <style>
+      audio {
+        display: none;
+      }
+      iframe {
+        display: none;
+      }
+    </style>
     <title>Sword Art Online</title>
   </head>
   <body>
+    <audio controls src="%PUBLIC_URL%/sounds/Swordland.mp3" type="audio/mpeg" autoplay="true" volume="0" loop></audio>
+    <!-- <audio controls src="/sounds/Swordland.mp3" type="audio/mpeg" autoPlay volume="1" loop></audio> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

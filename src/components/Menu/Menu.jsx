@@ -48,7 +48,7 @@
 
 // щудшаруа
 
-import React from 'react'; // { useState } 
+import React, { useState } from 'react'; // { useState } 
 import {
   Container,
   MenuList,
@@ -56,44 +56,44 @@ import {
   Border,
 } from './Menu.styled';  // Попередньо визначені стилі для компонента
 import { faUser, faUserGroup, faComments, faMapLocationDot, faGear } from '@fortawesome/free-solid-svg-icons';
-// import hoverSound from '../sounds/SAO_Menu_SFX.mp3';
+import hoverSound from '../sounds/SAO_Menu_SFX.mp3';
 
 const Menu = () => {
-//   const [userInteracted, setUserInteracted] = useState(false);
-//   const audio = new Audio(hoverSound);
+  const [userInteracted, setUserInteracted] = useState(false);
+  const audio = new Audio(hoverSound);
 
-//   const playHoverSound = () => {
-//     if (userInteracted) {
-//       audio.play();
-//     }
-//   };
+  const playHoverSound = () => {
+    if (userInteracted) {
+      audio.play();
+    }
+  };
 
-//   const handleMenuItemMouseEnter = () => {
-//     playHoverSound();
-//   };
+  const handleMenuItemMouseEnter = () => {
+    playHoverSound();
+  };
 
-//   const handlePageClick = () => {
-//     setUserInteracted(true);
-//   };
+  const handlePageClick = () => {
+    setUserInteracted(true);
+  };
 
   return (
-    <Container> 
+    <Container onClick={handlePageClick}> 
         {/* onClick={handlePageClick} */}
       <MenuList>
-        <Border>
+        <Border onClick={handleMenuItemMouseEnter}>
             {/* onClick={handleMenuItemMouseEnter}> */}
             <MenuItem icon={faUser} data-isfirstorlast="true" />
         </Border>
-            <Border>
+            <Border onClick={handleMenuItemMouseEnter}>
                 <MenuItem icon={faUserGroup} />
             </Border>
-            <Border>
+            <Border onClick={handleMenuItemMouseEnter}>
                 <MenuItem icon={faComments} />
             </Border>
-            <Border>
+            <Border onClick={handleMenuItemMouseEnter}>
                 <MenuItem icon={faMapLocationDot} />
             </Border>
-            <Border>
+            <Border onClick={handleMenuItemMouseEnter}>
                 <MenuItem icon={faGear} data-isfirstorlast="true" />
             </Border>
       </MenuList>
