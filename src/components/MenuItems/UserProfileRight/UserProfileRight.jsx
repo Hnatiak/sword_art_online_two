@@ -45,6 +45,8 @@ import EquipmentGray from './menuandoption/EquipmentGray.png'
 import Items from './menuandoption/Items.png'
 import ItemsGray from './menuandoption/ItemsGray.png'
 import SkillsItems from './Items/Skills/SkillsItems';
+import { MenuProvider } from 'components/Menu/MenuContext';
+import UserProfileLeft from '../UserProfileLeft/UserProfileLeft';
 
 const UserProfileRight = () => {
   // const [activeMenuItem, setActiveMenuItem] = useState(null);
@@ -128,7 +130,11 @@ const UserProfileRight = () => {
               <SmscontainerActive />
               <h2>Skills</h2>
             </ItemActive>
-            <SkillsItems />
+            {/* <SkillsItems /> */}
+            <MenuProvider>
+              <UserProfileLeft />
+              <SkillsItems />
+            </MenuProvider>
           </>
         ) : (
           <Item onClick={() => handleMenuItemMouseEnter('skills')}>

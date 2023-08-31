@@ -28,15 +28,17 @@ import { Container, Item, Logo, LogoHover, Name, LogoContainer, Smscontainer, Ci
 import Person from './menuandoption/person2.png';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import hoverSound from '../../sounds/SAO_Menu_SFX.mp3';
+import { useMenuContext } from '../../Menu/MenuContext';
 
-import Description from './menuandoption/Description.png'
+// import Description from './menuandoption/Throwingasword.png'
 
 const totalCircles = 12;
 const radius = 135;
 const angleIncrement = (2 * Math.PI) / totalCircles;
 
-const UserProfileRight = () => {
-  const [selectedCircleId, setSelectedCircleId] = useState(6);
+const UserProfileLeft = () => {
+  const { selectedCircleId, setSelectedCircleId } = useMenuContext();
+  // const [selectedCircleId, setSelectedCircleId] = useState(6);
   const [userInteracted, setUserInteracted] = useState(false);
   const [isPlayingSound, setIsPlayingSound] = useState(false);
   const audio = new Audio(hoverSound);
@@ -92,7 +94,7 @@ const UserProfileRight = () => {
         </Item>
         <div style={{ background: '#d6d6d6ff', padding: '20px', width: '300px' }}>
           <DescriptionContainer>
-            <Icon src={Description} alt="Icon" />
+            <Icon src={`${selectedCircle.icon}`} alt="Icon" />
             <div>{selectedCircle ? selectedCircle.title : ''}</div>
           </DescriptionContainer>
           <div style={{ marginLeft: '60px' }}>{selectedCircle ? (selectedCircle.description.split('\n').map((paragraph, index) => (
@@ -102,4 +104,4 @@ const UserProfileRight = () => {
   );
 };
 
-export default UserProfileRight;
+export default UserProfileLeft;

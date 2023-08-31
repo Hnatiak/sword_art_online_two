@@ -96,6 +96,7 @@ import UserProfileRight from '../MenuItems/UserProfileRight/UserProfileRight';
 import UserProfileLeft from '../MenuItems/UserProfileLeft/UserProfileLeft';
 import UserGroup from '../MenuItems/UserGroup/UserGroup';
 import Settings from '../MenuItems/Settings/Settings';
+import { MenuProvider } from './MenuContext';
 
 import User from './images/User.png'
 import UserGray from './images/UserGray.png'
@@ -111,6 +112,7 @@ import LocationGray from './images/LocationGray.png'
 
 import SettingsImg from './images/Settings.png'
 import SettingsGray from './images/SettingsGray.png'
+import SkillsItems from '../MenuItems/UserProfileRight/Items/Skills/SkillsItems';
 
 const Menu = () => {
   const [userInteracted, setUserInteracted] = useState(false);
@@ -118,7 +120,7 @@ const Menu = () => {
   const audio = new Audio(hoverSound);
   const [isPlayingSound, setIsPlayingSound] = useState(false);
 
-  const [selectedCircleId, setSelectedCircleId] = useState(null); // Початкове значення може бути null
+  // const [selectedCircleId, setSelectedCircleId] = useState(null); // Початкове значення може бути null
 
   const playHoverSound = () => {
     if (userInteracted && !isPlayingSound) {
@@ -156,14 +158,14 @@ const Menu = () => {
     <>
       <Container onClick={handlePageClick}>
         <MenuList>
+
           {activeMenuItem === 'user' ? (
-            <div style={{ display: 'flex'}} >
+            <div style={{ display: 'flex' }}>
               <div onClick={() => handleMenuItemClick('user')}>
                 <MenuItem src={User} alt="User" />
               </div>
               <div>
-                <UserProfileLeft />
-                <UserProfileRight />
+                  <UserProfileRight />
               </div>
             </div>
           ) : (

@@ -76,7 +76,9 @@ import styled from "@emotion/styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled.div`
-    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    position: fixed;
     left: 830px;
     box-shadow: 0 0 10px rgba(0, 6, 0, 0.8);
     top: 180px;

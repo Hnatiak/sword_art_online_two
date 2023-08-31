@@ -44,6 +44,7 @@ import GuildGray from './menuandoption/GuildGray.png'
 
 import Party from './menuandoption/Party.png'
 import PartyGray from './menuandoption/PartyGray.png'
+import PartyContent from './Items/Party/Party';
 
 const UserGroup = () => {
 //   const [activeMenuItem, setActiveMenuItem] = useState(null);
@@ -127,7 +128,7 @@ const UserGroup = () => {
               <SmscontainerActive />
               <h2>Party</h2>
             </ItemActive>
-            {/* <Settings /> */}
+            <PartyContent />
           </>
         ) : (
           <Item onClick={() => handleMenuItemMouseEnter('party')}>

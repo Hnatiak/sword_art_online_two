@@ -27,10 +27,12 @@ export const Icon = styled.img`
 `;
 
 export const Menu = styled.div`
-    border: 1px solid;
+border: 1px solid;
     border-image: linear-gradient(to top, transparent, #f9f9f9 20%, #f9f9f9 80%, transparent) 0 0 0 1;
-    max-height: 350px;
-    top: -80px;
+    max-height: 210px;
+    top: 115px;
+    position: absolute;
+    left: 290px;
 
     &::before {
       position: absolute;
@@ -39,8 +41,8 @@ export const Menu = styled.div`
       border-top: 20px solid transparent;
       border-bottom: 20px solid transparent;
       left: -36px;
-      top: calc(50% - 10px);
-  }
+      top: calc(45% - 10px);
+    }
 
   &::after {
     position: absolute;
@@ -48,19 +50,11 @@ export const Menu = styled.div`
     border: 6px solid #333;
     border-radius: 50%;
     left: -16px;
-    top: calc(52.3% - 3px);
+    top: calc(49.5% - 3px);
   }
 
     position: absolute;
     left: 290px;
-`;
-
-export const MenuWrapper = styled.div`
-  position: relative;
-  bottom: 25px;
-
-  // -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(28%,rgba(255,255,255,1)), color-stop(82%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)))
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(8%,rgba(255,255,255,1)), color-stop(92%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
 `;
 
 export const MenuList = styled.ul`
@@ -95,6 +89,7 @@ export const MenuListItem = styled.li`
   margin-bottom: 5px;
   cursor: pointer;
   align-items: center;
+  gap: 15px;
   ${props => (props.isSelected ? 'color: #f9f9f9;' : 'color: #6a686a;')}
   transition: background-color 0.2s;
 
@@ -106,4 +101,10 @@ export const MenuListItem = styled.li`
     background-color: ${props => (props.isSelected ? '#eda60c' : '#ffaf00')};
     color: #f9f9f9;
   }
+`;
+
+export const MenuItem = styled.img`
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
 `;

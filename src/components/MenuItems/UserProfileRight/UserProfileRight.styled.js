@@ -137,19 +137,38 @@ export const Smscontainer = styled.div`
     border-right: 26px solid transparent; /* Змінено ширину границі на 50px */
 `;
 
+// export const SmscontainerActive = styled.div`
+//     -webkit-transform: rotate(270deg);
+//     display: block;
+//     content: '';
+//     width: 0;
+//     height: 0;
+//     border: 0 solid transparent;
+//     position: absolute;
+//     border-left: 26px solid transparent; /* Змінено ширину границі на 50px */
+//     border-bottom: 50px solid #eba601ff; /* Змінено ширину границі на 100px */
+//     top: 62.5%;
+//     left: -35px;
+//     margin-top: -50px;
+//     background: transparent;
+//     border-right: 26px solid transparent; /* Змінено ширину границі на 50px */
+// `;
+
 export const SmscontainerActive = styled.div`
-    -webkit-transform: rotate(270deg);
-    display: block;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 0 solid transparent;
-    position: absolute;
-    border-left: 26px solid transparent; /* Змінено ширину границі на 50px */
-    border-bottom: 50px solid #eba601ff; /* Змінено ширину границі на 100px */
-    top: 62.5%;
-    left: -35px;
-    margin-top: -50px;
-    background: transparent;
-    border-right: 26px solid transparent; /* Змінено ширину границі на 50px */
+  -webkit-transform: rotate(270deg);
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  position: absolute;
+  border-left: 26px solid transparent;
+  border-bottom: 50px solid #eba601ff;
+  top: 62.5%;
+  left: -35px;
+  margin-top: -50px;
+  background: transparent;
+  border-right: 26px solid transparent;
+  animation: slidein 3s linear 1s infinite running;
 `;
+
